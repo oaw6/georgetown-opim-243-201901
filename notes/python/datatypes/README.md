@@ -1,4 +1,4 @@
-# Datatypes
+# Python Datatypes Overview
 
 Common Python datatypes include:
 

@@ -1,6 +1,6 @@
 # "Shopping Cart" Project
 
-![a screencast of a user running a python script from a terminal.](https://user-images.githubusercontent.com/1328807/50870741-53442b80-1387-11e9-9180-ab96688c6590.gif)
+![a screencast of a user running a python script from a terminal](https://user-images.githubusercontent.com/1328807/50870741-53442b80-1387-11e9-9180-ab96688c6590.gif)
 
 ## Business Prompt
 
@@ -9,6 +9,12 @@ Your local corner grocery store has hired you as a technology consultant to help
 Currently, the store affixes a price tag sticker on each grocery item in stock and uses a calculator at the checkout counter to add up the product prices and calculate tax and total amount due.
 
 Instead, the store owner describes a desired checkout process which involves a checkout clerk scanning each product's barcode to automatically look up product prices, perform tax and total calculations, and print a customer receipt.
+
+## Learning Objectives
+
+  1. Create a tool to facilitate and streamline a business process.
+  2. Gain familiarity with processing and validating user inputs in Python.
+  3. Reinforce introductory Python programming concepts such as datatypes, functions, variables, and loops.
 
 ## Requirements
 
@@ -31,7 +37,48 @@ After the clerk indicates there are no more items, the program should print a cu
 
 The program should be able to process multiple shopping cart items of the same kind, but need not display any groupings or aggregations of those items (although it may optionally do so).
 
+### Example Output
+
+``` sh
+(shopping-env)  --->> python shopping_cart.py
+Please input a product identifier: 1
+Please input a product identifier: 8
+Please input a product identifier: 6
+Please input a product identifier: 8
+Please input a product identifier: 8
+Please input a product identifier: 16
+Please input a product identifier: 12
+Please input a product identifier: DONE
+#> ---------------------------------
+#> GREEN FOODS GROCERY
+#> WWW.GREEN-FOODS-GROCERY.COM
+#> ---------------------------------
+#> CHECKOUT AT: 2019-02-02 11:31 AM
+#> ---------------------------------
+#> SELECTED PRODUCTS:
+#>  ... Chocolate Sandwich Cookies ($3.50)
+#>  ... Cut Russet Potatoes Steam N' Mash ($4.25)
+#>  ... Dry Nose Oil ($21.99)
+#>  ... Cut Russet Potatoes Steam N' Mash ($4.25)
+#>  ... Cut Russet Potatoes Steam N' Mash ($4.25)
+#>  ... Mint Chocolate Flavored Syrup ($4.50)
+#>  ... Chocolate Fudge Layer Cake ($18.50)
+#> ---------------------------------
+#> SUBTOTAL: $61.24
+#> TAX: $3.67
+#> TOTAL: $64.91
+#> ---------------------------------
+#> THANKS, SEE YOU AGAIN SOON!
+#> ---------------------------------
+```
+
 ## Setup
+
+### From Starter
+
+To setup your project repository, either fork and clone the professor's ["Shopping Cart" Starter Repository](https://github.com/prof-rossetti/shopping-cart-starter-py), or follow the steps below to setup your own from scratch.
+
+### From Scratch
 
 Take this time to create a new repository on GitHub.com called something like "shopping-cart-project". We'll refer to this as your "remote project repository".
 
@@ -75,13 +122,20 @@ Create a new virtual environment named something like "shopping-cart-env" and ac
 
 Finally, make your first commit with a message like "Setup project repository", and push these changes to GitHub. Once you see these changes reflected in your remote project repository on GitHub.com, you are ready to start the project development process.
 
+
+
+
 ## Development
 
 As you develop your project repository, incrementally "commit" your work along the way. By the time you are finished with development, your project repository should contain a version history including at least a handful of incremental commits.
 
+### Checkpoints
+
 If you're not sure where to start, feel free to adopt the development approach recommended in the ["Shopping Cart" Checkpoints](shopping-cart/checkpoints.md).
 
-Otherwise, if you're able to complete the basic project requirements with relative ease, consider addressing one or more of the ["Shopping Cart" Further Exploration Challenges](shopping-cart/further.md) (e.g. writing receipts to file, integrating with a real-life barcode scanner, etc.).
+### Further Exploration
+
+If you're able to complete the basic project requirements with relative ease, consider addressing one or more of the ["Shopping Cart" Further Exploration Challenges](shopping-cart/further.md) (e.g. writing receipts to file, integrating with a real-life barcode scanner, etc.).
 
 ## Submission
 
